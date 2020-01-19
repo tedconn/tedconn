@@ -1,29 +1,63 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+      <Header />
+      <Intro />
+      <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Header from './components/Header.vue';
+import Intro from './components/Intro.vue';
+import Footer from './components/Footer.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Header,
+    Intro,
+    Footer,
   },
 })
 export default class App extends Vue {}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 672px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 896px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1104px;
+    }
+  }
+
+  .container {
+    position: relative;
+    padding: 0 24px;
+  }
+  @media (min-width: 576px) {
+    .container {
+      padding: 0;
+    }
+  }
 </style>

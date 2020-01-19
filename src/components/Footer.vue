@@ -5,13 +5,16 @@
       <div class="footer__socials">
         <a class="footer__social footer__social--twitter"
           href="http://twitter.com/citizenconn"
-          target="_blank"></a>
+          target="_blank"
+          rel="noopener"></a>
         <a class="footer__social footer__social--instagram"
           href="https://www.instagram.com/wereinthistogethernow/"
-          target="_blank"></a>
+          target="_blank"
+          rel="noopener"></a>
         <a class="footer__social footer__social--linkedin"
           href="https://www.linkedin.com/in/tedconn/"
-          target="_blank"></a>
+          target="_blank"
+          rel="noopener"></a>
       </div>
     </div>
     <div class="container links">

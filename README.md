@@ -1,5 +1,7 @@
 # tedconn.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b641552-e740-4e88-adbd-d3cb591d1a76/deploy-status)](https://app.netlify.com/sites/serene-minsky-9fce89/deploys)
+
 ## Project setup
 ```
 yarn install

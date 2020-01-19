@@ -4,7 +4,7 @@
       <router-link class="header__logo" to="/"></router-link>
       <ul class="header__actionmenu">
         <li class="header__menuaction">
-          <a class="button button--green" href="#">contact me</a>
+          <a class="button" v-bind:class="theme" href="#">contact me</a>
         </li>
         <li class="header__menuaction">
             <div class="header__hamburger" data-action="js-open-menu" href="#"></div>
@@ -30,7 +30,15 @@
 </template>
 
 <script lang="ts">
-export default {}
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+
+@Component({
+  props: {
+    theme: String
+  }
+})
+export default class Header extends Vue {}
 </script>
 
 <style scoped>
@@ -183,11 +191,19 @@ header {
   color: white;
   box-shadow: none;
 }
-.button--green {
+.button.green {
   color: #282828;
   background-color: #06e0a5;
 }
-.button--green:hover {
+.button.green:hover {
+  color: #282828;
+}
+
+.button.blue {
+  color: #282828;
+  background-color: #75b6f9;
+}
+.button.blue:hover {
   color: #282828;
 }
 

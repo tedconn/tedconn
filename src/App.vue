@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :theme='theme' />
     <router-view />
     <Footer />
   </div>
@@ -9,12 +9,23 @@
 <script lang="ts">
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
-export default {
-  name: 'App',
+import { Component } from 'vue-property-decorator';
+import Vue, { Component as VueComponent } from 'vue';
+
+@Component({
   components: {
     Header,
     Footer
+  }
+})
+export default class App extends Vue {
+  
+  get theme() {
+    const route = this.$route.matched.find(record => {
+      return record.meta.theme;
+    });
 
+    return route?.meta.theme || 'green';
   }
 };
 </script>

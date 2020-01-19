@@ -13,11 +13,17 @@ export default new Router({
       path: '/',
       name: 'index',
       component: Home,
+      meta: {
+        theme: 'green'
+    }
     },
     {
         path: '/about',
         name: 'about',
         component: About,
+        meta: {
+            theme: 'blue'
+        }
       },
   ],
 });

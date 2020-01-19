@@ -51,9 +51,9 @@ export default class Footer extends Vue {}
 
 .footer__logo {
   float: left;
-  width: 60px;
-  height: 20px;
-  background-image: url("/images/dott-logo-white.svg");
+  width: 120px;
+  height: 30px;
+  background-image: url("../assets/logo-white.svg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;

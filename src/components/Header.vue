@@ -1,10 +1,10 @@
 <template>
   <header>
     <div class="container">
-      <a class="header__logo" href="home">Ted Conn</a>
+      <a class="header__logo" href="home"></a>
       <ul class="header__actionmenu">
         <li class="header__menuaction">
-          <a class="button button--green" href="#">something</a>
+          <a class="button button--green" href="#">contact me</a>
         </li>
         <li class="header__menuaction">
             <div class="header__hamburger" data-action="js-open-menu" href="#"></div>
@@ -19,11 +19,11 @@
             <a class="header__menulink" href="#">blog</a>
           </li>
         </ul>
-        <ul class="header__submenu">
+        <!--<ul class="header__submenu">
           <li class="header__menuitem">
             <a class="header__menulink" href="#">contact me</a>
           </li>
-        </ul>
+        </ul>-->
       </div>
     </div>
   </header>
@@ -47,27 +47,27 @@ header {
 }
 
 .header__logo {
-  width: 72px;
-  height: 24px;
+  width: 180px;
+  height: 42px;
   position: absolute;
   left: 20px;
-  /*background-image: url('/images/dott-logo-black.svg');
+  background-image: url('../assets/logo.svg');
         background-size: cover;
-        background-repeat: no-repeat;*/
+        background-repeat: no-repeat;
   top: 32px;
   z-index: 20;
 }
 @media (min-width: 576px) {
   .header__logo {
     left: 0;
-    width: 84px;
-    height: 28px;
+    width: 180px;
+    height: 42px;
     top: 38px;
   }
 }
 @media (min-width: 768px) {
   .header__logo {
-    top: 32px;
+    top: 30px;
   }
 }
 
@@ -92,7 +92,7 @@ header {
 }
 @media (min-width: 992px) {
   .header__mainmenu {
-    margin-left: 102px;
+    margin-left: 180px;
     position: relative;
     top: 28px;
     float: left;

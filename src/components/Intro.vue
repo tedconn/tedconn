@@ -3,11 +3,10 @@
       <div class="container">
           <div class="intro__wrap">
               <h1 class="intro__head">Hello</h1>
-              <p class="intro__text">The quick brown fox jumps over the lazy dog.
-              The quick brown fox jumps over the lazy dog.
-              The quick brown fox jumps over the lazy dog.
-              The quick brown fox jumps over the lazy dog.
-              The quick brown fox jumps over the lazy dog.
+              <p class="intro__text">I'm a software developer at Salesforce where I
+                  work on Communities, Experiences and Sites. I've been passionate about website
+development for over 20 years and my upcoming blog will mostly be about that.
+                  Thanks for stopping by!
           </p>
           </div>
       </div>

@@ -3,18 +3,22 @@
     <div class="container">
       <a href="#" class="footer__logo"></a>
       <div class="footer__socials">
-        <a
-          class="footer__social footer__social--twitter"
+        <a class="footer__social footer__social--twitter"
           href="http://twitter.com/citizenconn"
-          target="_blank"
-        ></a>
+          target="_blank"></a>
+        <a class="footer__social footer__social--instagram"
+          href="https://www.instagram.com/wereinthistogethernow/"
+          target="_blank"></a>
+        <a class="footer__social footer__social--linkedin"
+          href="https://www.linkedin.com/in/tedconn/"
+          target="_blank"></a>
       </div>
     </div>
     <div class="container links">
-      <a href="#" target="_blank">Terms&nbsp;&amp;&nbsp;Conditions</a> |
-      <a href="#" target="_blank">Privacy&nbsp;Policy</a> |
-      <a href="#" target="_blank">Cookie&nbsp;Notice</a> |
-      <a href="#" target="_blank">FAQ</a>
+      Copyright © 2019-2020 |
+      <a href="#" target="_blank">Disclaimer</a>
+      <!--<a href="#" target="_blank">Cookie&nbsp;Notice</a> |
+      <a href="#" target="_blank">FAQ</a>-->
     </div>
   </footer>
 </template>
@@ -60,4 +64,40 @@ export default class Footer extends Vue {}
     top: 40px;
   }
 }
+
+.footer__socials {
+  padding: 0;
+  margin: 0;
+  float: right;
+  position: relative;
+  top: 31px;
+}
+@media (min-width: 768px) {
+  .footer__socials {
+    top: 39px;
+  }
+}
+.footer__social {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin-left: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__social--twitter {
+  background-image: url('../assets/social-twitter.svg');
+  height: 22px;
+  width: 22px;
+  position: relative;
+  top: 5px;
+}
+.footer__social--instagram {
+  background-image: url('../assets/social-instagram.svg');
+}
+.footer__social--linkedin {
+  background-image: url('../assets/social-linkedin.svg');
+}
+
 </style>

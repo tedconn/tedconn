@@ -26,9 +26,9 @@
   </footer>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+export default {
 
-export default class Footer extends Vue {}
+}
 </script>
 <style scoped>
 .footer {

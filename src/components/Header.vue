@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <a class="header__logo" href="home"></a>
+      <router-link class="header__logo" to="/"></router-link>
       <ul class="header__actionmenu">
         <li class="header__menuaction">
           <a class="button button--green" href="#">contact me</a>
@@ -13,7 +13,7 @@
       <div class="header__menus">
         <ul class="header__mainmenu">
           <li class="header__menuitem">
-            <a class="header__menulink" href="#">about me</a>
+              <router-link class="header__menulink" to="/about">about me</router-link>
           </li>
           <li class="header__menuitem">
             <a class="header__menulink" href="#">blog</a>
@@ -30,10 +30,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-
-@Component
-export default class Header extends Vue {}
+export default {}
 </script>
 
 <style scoped>

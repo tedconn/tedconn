@@ -1,25 +1,22 @@
 <template>
   <div id="app">
     <Header />
-    <Intro />
+    <router-view />
     <Footer />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
 import Header from './components/Header.vue';
-import Intro from './components/Intro.vue';
 import Footer from './components/Footer.vue';
-
-@Component({
+export default {
+  name: 'App',
   components: {
     Header,
-    Intro,
-    Footer,
-  },
-})
-export default class App extends Vue {}
+    Footer
+
+  }
+};
 </script>
 
 <style>
